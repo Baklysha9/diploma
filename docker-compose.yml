@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+    web:
+          build: ./web
+          environment:
+            - APACHE_RUN_USER=#1000
+          volumes:
+            - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
+          ports:
+            - 4080:80
+          working_dir: ${APP_PATH_CONTAINER}
+    db:
+          image: mariadb
+          restart: always
+          environment:
+             MYSQL_ROOT_PASSWORD: qwerty
+          volumes:
+            - ${DB_PATH_HOST}:/var/lib/mysql
+    phpmyadmin:
+          image: phpmyadmin/phpmyadmin
+          environment:
+            - PMA_ARBITRARY=1
+          restart: always
+          ports:
+            - 5080:80
+          volumes:
+            - /sessions
+    composer:
+          image: composer:1.6
+          volumes:
+            - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
+          working_dir: ${APP_PATH_CONTAINER}
+          command: composer install
