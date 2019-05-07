@@ -1,3 +1,7 @@
+/databases
+databases/performance_schema/
+databases/beauty_saloon/
+databases/mysql/
 /node_modules
 /public/hot
 /public/storage

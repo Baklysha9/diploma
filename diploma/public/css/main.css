@@ -1,5 +1,6 @@
 body {
     background: #ec939318;
+    overflow-x: hidden
 }
 nav {
     font-family: bookman;
@@ -26,7 +27,6 @@ nav {
     color: #ec9393;
     /* text-shadow: 1px 1px 1px rgba(250, 234, 234, 0.527); */
 }
-
 .person_main {
     max-width: 100%;
     max-height: 100%;
@@ -45,33 +45,72 @@ nav {
     width: 60%;
     margin-left: 20%;
 }
-.slide{
-  float:left;
-  width:300px;
-  height:200px;
-  box-sizing: border-box;
-  background: #eee;
-  border:2px solid black;
-  border-radius: 5px;
-  margin: 0;
-  padding: 0;
-}
-.slidewrapper{
-  list-style: none;
-  height:200px;
-  margin: 0;
-  padding: 0;
-}
-.viewport{
-  height: 200px;
-  width:300px;
-  overflow: hidden;
-  position:relative;
-}
-.slidewrapper{
-  position:absolute;
-  left:0;
-  top:0;
+.padding-out {
+    padding: 0px;
 }
 
+.place-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
+.borderBox {
+    margin: 10px;
+}
+
+.bodyCard {
+    height: 160px;
+    text-align: center;
+}
+
+.titleCard {
+    height: 50px;
+    text-align: center;
+}
+
+.btnCard {
+    margin-left: 70px;
+}
+
+.servicePage {
+    font-family: arial;
+    width: 800px;
+    height: auto;
+    position: fixed;
+    z-index: 1000;
+    background:#ec9393;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.buttonClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .buttonClose:hover {
+    opacity: 1;
+  }
+  .buttonClose:before, .buttonClose:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .buttonClose:before {
+    transform: rotate(45deg);
+  }
+  .buttonClose:after {
+    transform: rotate(-45deg);
+  }

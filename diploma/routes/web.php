@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'MainController@index');
+Route::get('services', 'ServiceController@index');
+Route::get('getServices', 'ServiceController@getServices');
+Route::get('/getService/{id}', 'ServiceController@getService');

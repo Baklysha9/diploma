@@ -3,6 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Пример на bootstrap 4: Прайслист - пример страницы с ценой, созданной с помощью карт, с пользовательским верхнего и нижнего колонтитула.">
     <meta name="author" content="">
@@ -34,11 +35,13 @@
         @include('layouts.nav')
 
         @yield('content')
-
+ 
         @include('layouts.footer')
   
 <!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="{{ asset('js/main.js')}}"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="{{ asset('js/app.js') }}"></script>
+
+
 </body>
 </html>
