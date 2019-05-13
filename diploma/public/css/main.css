@@ -6,10 +6,10 @@ nav {
     font-family: bookman;
     font-size: 20px;
 }
-.navbar {
+/* .navbar {
     margin-bottom: 0px !important;
     z-index: 1;
-}
+} */
 .navbar button{
     font-family: bookman;
     background: #ec9393;
@@ -76,9 +76,8 @@ nav {
 }
 
 .servicePage {
-    font-family: arial;
-    width: 800px;
-    height: auto;
+    max-width: 800px;
+    max-height: 100%;
     position: fixed;
     z-index: 1000;
     background:#ec9393;
@@ -86,6 +85,19 @@ nav {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    overflow-y: auto;
+}
+
+.servicePageInfo {
+    display:inline-block;
+    vertical-align:middle;
+    width: 100%;
+    text-align: center; 
+    margin-top:20px;
+}
+
+.servicePageInfo p {
+    text-align: justify;
 }
 
 .buttonClose {
@@ -96,21 +108,47 @@ nav {
     height: 32px;
     opacity: 0.3;
     cursor: pointer;
-  }
-  .buttonClose:hover {
+}
+
+.buttonClose:hover {
     opacity: 1;
-  }
-  .buttonClose:before, .buttonClose:after {
+}
+
+.buttonClose:before, .buttonClose:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
     background-color: #333;
-  }
-  .buttonClose:before {
+}
+
+.buttonClose:before {
     transform: rotate(45deg);
-  }
-  .buttonClose:after {
+}
+
+.buttonClose:after {
     transform: rotate(-45deg);
-  }
+}
+
+.firstColum {
+    height: auto;
+    background: white;
+    padding: 0;
+}
+
+.secondColum {
+    height: auto;
+    text-align: center;
+}
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+    text-align: right
+}
+
+.priceList {
+    width: 100%; 
+    max-width: 2015px; 
+    max-height: 2843px;
+}

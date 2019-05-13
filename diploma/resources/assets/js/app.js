@@ -16,6 +16,8 @@ window.Vue = require('vue');
 
 Vue.component('slider', require('./components/Slider.vue'));
 Vue.component('service', require('./components/Service.vue'));
+Vue.component('navbar', require('./components/Navbar.vue'));
+Vue.component('mainform', require('./components/MainForm.vue'));
 
 $.ajaxSetup({
     headers: {

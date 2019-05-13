@@ -1,10 +1,10 @@
 <template>
 <div class="container">
-    <div class="row person_row shadow-sm">
-        <div class="col-6 col-sm-6 col-md-6">
-                <span id="title"></span> 
+    <div class="row person_row">
+        <div class="col-sm-12 col-md-6">
+                <p id="title"></p> 
         </div>
-        <div class="col-6 col-sm-6 col-md-6 padding-out shadow-sm">
+        <div class="col-sm-12 col-md-6 padding-out">
             <img src="" alt="" id="image">
         </div>
     </div>
@@ -36,7 +36,6 @@ import { slider } from "../scripts/slider";
             height: 100%;
         }
         #title {
-            vertical-align: middle;
-            height: 100%;
+            padding: 6em 0;
         }
     </style>

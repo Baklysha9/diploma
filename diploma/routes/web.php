@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', 'MainController@index');
+Route::get('', 'MainController@index');
+Route::post('sendEmail', 'MainController@sendEmail');
+
 Route::get('services', 'ServiceController@index');
 Route::get('getServices', 'ServiceController@getServices');
 Route::get('/getService/{id}', 'ServiceController@getService');
+
+Route::get('price', 'PriceController@index');
