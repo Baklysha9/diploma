@@ -152,3 +152,41 @@ nav {
     max-width: 2015px; 
     max-height: 2843px;
 }
+
+.contactsImage {
+    width: 100%;
+}
+
+.contactsInfo {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;  
+}
+.navbar {
+    z-index:1;
+}
+.btn-primary {
+    background: #ec9393;
+    text-decoration: none;
+    border-color:#ec9393;
+}
+.btn-primary:hover{
+    background-color:white;
+    color: #333;
+    border-color:white;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    border:0;
+    background-color:white;
+    color: #333;
+    border-color:white;
+    outline: none;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+.ButtonNav {
+    margin: 5px;
+}
