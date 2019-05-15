@@ -11713,6 +11713,10 @@ $.ajaxSetup({
     }
 });
 
+if (location.pathname == '/admin-panel') {
+    $('.navbar').remove();
+}
+
 var app = new Vue({
     el: '#app'
 });

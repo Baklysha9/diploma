@@ -12,7 +12,7 @@
 */
 Auth::routes();
 
-Route::get('', 'MainController@index');
+Route::get('', 'MainController@index')->name('main');
 Route::post('sendEmail', 'MainController@sendEmail');
 
 Route::get('services', 'ServiceController@index');
@@ -24,4 +24,10 @@ Route::get('contacts', 'ContactsController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('logout','Auth\LoginController@logout');
+
+
+Route::group(['middleware' => 'admin'], function () {
+    Route::get('/admin-panel', 'AdminController@index');
+});
+
 

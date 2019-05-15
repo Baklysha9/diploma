@@ -187,6 +187,11 @@ nav {
 .btn-primary:focus {
     box-shadow: none;
 }
+
+.form-control:focus {
+    border-color: #ec9393;
+    box-shadow: 0 0 0 0.2rem rgb(236, 147, 147);
+}
 .ButtonNav {
     margin: 5px;
 }

@@ -24,6 +24,10 @@ $.ajaxSetup({
     }
 });
 
+if (location.pathname == '/admin-panel') {
+    $('.navbar').remove();
+}
+
 const app = new Vue({
     el: '#app',
 });
