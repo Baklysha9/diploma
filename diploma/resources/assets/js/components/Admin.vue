@@ -1,18 +1,43 @@
 <template>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-4">
-            <h3>Количество зарегестрированных пользователей: {{countUser}}</h3>
+        <div class="col-sm-12 col-md-4 statistic">
+            <h3>Количество пользователей: {{countUser}}</h3>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 statistic">
             <h3>Количество заявок с сайта: {{countOrder}}</h3>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 statistic">
             <h3>Количество услуг на сайте: {{countServices}}</h3>
         </div>
-        <br>
-        <br>
-        <br>
+
+        <h3 class="sectionName">Пользователи:</h3> 
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Date of registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="user in users">
+                    <th scope="row">{{user.id}}</th>
+                    <td>
+                        <h4>{{user.name}}</h4>
+                    </td>
+                    <td>
+                        <h4>{{user.email}}</h4>
+                    </td>
+                    <td>
+                        <h4>{{user.created_at}}</h4>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+         <h3 class="sectionName">Услуги:</h3> 
         <table class="table">
             <thead class="thead-dark">
                 <tr>
@@ -38,7 +63,6 @@
                 </tr>
             </tbody>
         </table>
-
         <button class="btn-primary buttonAddServiceAdmin" v-on:click="addService">Добавить</button>
     </div>
 </div>
@@ -49,6 +73,7 @@
            return { 
             name: '',
             services: [],
+            users: [],
             countUser: 0,
             countOrder:0,
             countServices:0
@@ -64,6 +89,10 @@
             axios.get('/admin-countUser').then((response) => {
                 console.log(response);
                 this.countUser = response.data;
+            });
+            axios.get('/admin-getUsers').then((response) => {
+                console.log(response);
+                this.users = response.data;
             });
             console.log('Component mounted.');
         },
@@ -121,7 +150,7 @@
                 }
             },
             addService: function () {
-                let number = $('tbody').find('tr:last th').text();
+                let number = $('tbody:last').find('tr:last th').text();
                 let currentNumber = +number + 1;
                 let obj = {};
                   obj.id = currentNumber;
@@ -137,8 +166,16 @@
     }
 </script>
 <style>
-.table {
-    margin-top: 100px;
+.statistic {
+    text-align:center;
+}
+.sectionName {
+    text-align:center;
+    margin-top: 150px;
+    margin-bottom:50px
+}
+.table:first-child th{
+    text-align: center;
 }
 textarea {
     width:100%;

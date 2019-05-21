@@ -13,21 +13,6 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/main.css')}}">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <!-- <link href="pricing.css" rel="stylesheet"> -->
-    
   </head>
 
   <body>
@@ -41,6 +26,7 @@
 <!--jQuery-->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript" src="/js/jquery.maskedinput-1.3.min.js"></script>
 <script>
 $(".navbar a").on("click", function(){
    $(".navbar").find(".active").removeClass("active");

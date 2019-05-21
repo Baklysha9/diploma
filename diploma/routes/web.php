@@ -29,6 +29,7 @@ Route::get('logout','Auth\LoginController@logout');
 Route::group(['middleware' => 'admin'], function () {
     Route::get('admin-panel', 'AdminController@index');
     Route::get('admin-countUser', 'AdminController@countUser');
+    Route::get('admin-getUsers', 'AdminController@getUsers');
     Route::post('admin-updateService', 'ServiceController@updateService');
     Route::post('admin-deleteService', 'ServiceController@deleteService');
 });

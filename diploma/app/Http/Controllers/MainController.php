@@ -16,7 +16,8 @@ class MainController extends Controller
         $name = $data['name'];
         $phone = $data['phone'];
 
-        Mail::send('mail.mail', [], function ($m) {
+        
+        Mail::send('mail.mail', ['data' => $data], function ($m) {
             $m->from('bogdandynay@gmail.com', 'Sender');
             $m->to('bogdandynay@gmail.com', 'Receiver')->subject('Тестовое письмо с HTML');
         });

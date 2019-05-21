@@ -7,8 +7,9 @@
         <img src="{{ asset('img/businessportrait-basel-natascha-jansen.jpg')}}" alt="person" class="person_main">
       </div>
       <div class="col-sm-12 col-md-6 person_content ">
-        <h1 class="">Welcome! Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p class="">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis totam quis quae nesciunt blanditiis! Possimus iste esse enim provident, nesciunt accusantium molestias perferendis vel ipsam dolorum, quod eligendi culpa deserunt.</p>
+        <h1 class=""><span>Willkommen zurück!</span><br>Lorem ipsum dolor sit table for your potential.</h1>
+        <p class="">Die Formularsteuerelemente von Bootstrap erweitern unsere Formatvorlagen für neu gestartete Formulare um Klassen. Verwenden Sie diese Klassen, um die benutzerdefinierten Anzeigen für ein konsistenteres Rendering in allen Browsern und Geräten zu aktivieren.
+Stellen Sie sicher, dass Sie für alle Eingaben ein geeignetes Typattribut verwenden (z. B. E-Mail für E-Mail-Adresse oder Nummer für numerische Informationen), um neuere Eingabesteuerelemente wie E-Mail-Bestätigung, Nummernauswahl und mehr nutzen zu können.</p>
        <mainform></mainform>
       </div>
     </div>

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Marck Script;
+    src: url('/fonts/MarckScript-Regular.ttf');
+}
+@font-face {
+    font-family: Advent Pro;
+    src: url('/fonts/AdventPro-Medium.ttf');
+}
+
 body {
     background: #ec939318;
     overflow-x: hidden
@@ -14,6 +23,25 @@ nav {
     font-family: bookman;
     background: #ec9393;
     border-color: #ec9393;
+}
+.navbar-brand h3{
+    color: #ec9393 !important;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 50px;
+    text-decoration: blink;
+    border-top: 2px dashed #ec9393;
+}
+.navbar-brand span{
+    color: #ec9393 !important;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    border-bottom: 2px dashed #ec9393;
+}
+
+
+.nav-item {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
 }
 .person_row {
     background: white;
@@ -33,12 +61,18 @@ nav {
 }
 .person_content h1 {
     margin-top: 15%;
-    font-family: palatino;
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
     margin-bottom: 10%;
+    text-align: center;
+    color: #ec9393;
+}
+.person_content h1 span{
+    font-size: 50px;
 }
 .person_content {
-    text-align: justify;
-    font-family: bookman;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
 }
 .person_content form {
     margin-top: 10%;
@@ -194,4 +228,15 @@ nav {
 }
 .ButtonNav {
     margin: 5px;
+}
+
+.buttonAddServiceForm {
+    background: #ec9393;
+    float:right;
+    margin: 0px;
+    padding: 5px;
+    height: 36px;
+}
+.select {
+    margin-left: 5px;
 }

@@ -1,5 +1,6 @@
 
 window._ = require('lodash');
+window._ = require('jquery.maskedinput');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
