@@ -98,15 +98,18 @@ nav {
 .bodyCard {
     height: 160px;
     text-align: center;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .titleCard {
     height: 50px;
     text-align: center;
+    font-family: 'Marck Script', cursive;
 }
 
 .btnCard {
     margin-left: 70px;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .servicePage {
@@ -124,14 +127,18 @@ nav {
 
 .servicePageInfo {
     display:inline-block;
-    vertical-align:middle;
     width: 100%;
     text-align: center; 
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .servicePageInfo p {
-    text-align: justify;
+    text-align: center;
+    width: 100%;
+    font-family: 'Advent Pro', sans-serif;
+}
+.servicePageInfo h1,h4 {
+    font-family: 'Marck Script', cursive;
 }
 
 .buttonClose {
@@ -194,7 +201,11 @@ nav {
 .contactsInfo {
     text-align: center;
     padding-top: 7%;
-    padding-bottom: 7%;  
+    padding-bottom: 7%;
+    font-family: 'Advent Pro', sans-serif; 
+}
+.contactsInfo h3{
+    font-family: 'Marck Script', cursive;
 }
 .navbar {
     z-index:1;
@@ -239,4 +250,31 @@ nav {
 }
 .select {
     margin-left: 5px;
+}
+#title {
+    font-family: 'Marck Script', cursive;
+}
+.serviceTitle {
+    text-align: center;
+    padding: 20px;
+    color: #ec9393;
+    font-family: 'Marck Script', cursive;
+}
+#price {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 15px;
+}
+#price span{
+    font-size: 30px;
+}
+#time {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+}
+#time span{
+    font-size: 30px;
+}
+.panel-body {
+    margin-top: 10%;
+    font-family: 'Advent Pro', sans-serif;
 }

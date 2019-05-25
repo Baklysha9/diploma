@@ -16,10 +16,14 @@ class MainController extends Controller
         $name = $data['name'];
         $phone = $data['phone'];
 
+        if (empty($name)) {
+            abort(500);
+        }
+
         
         Mail::send('mail.mail', ['data' => $data], function ($m) {
             $m->from('bogdandynay@gmail.com', 'Sender');
-            $m->to('bogdandynay@gmail.com', 'Receiver')->subject('Тестовое письмо с HTML');
+            $m->to('bogdandynay@gmail.com', 'Receiver')->subject('Новая заявка с моего сайта');
         });
 
         // foreach ($keys as $key => $value) {

@@ -5,7 +5,7 @@
     <div class="row person_row shadow-sm">
         <div class="col-sm-12 col-md-9 padding-out contactsInfo">
             <div style="margin-top:7%;">
-                <h3>Kontakt</h3>
+                <h3>Kontakts</h3>
                 <p><b>JOLIE-Kosmetik - Institut de Beauté</b><br>Steinenvorstadt Nr. 8<br>4051 Basel</p>
                 <p><b>Elena Brezger:</b><br>E-Mail: joliekosmetik1@gmail.com<br>Tel. 0041 61 281 53 73<br>Fax: 0041 61 271 96 40</p>    
             </div>

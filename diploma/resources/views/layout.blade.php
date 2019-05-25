@@ -26,13 +26,13 @@
 <!--jQuery-->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="{{ asset('js/app.js') }}"></script>
-<script type="text/javascript" src="/js/jquery.maskedinput-1.3.min.js"></script>
-<script>
+<script src="{{ asset('js/jquery.maskedinput.js') }}"></script>
+<!-- <script>
 $(".navbar a").on("click", function(){
    $(".navbar").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
-</script>
+</script> -->
 
 
 </body>
