@@ -15,10 +15,9 @@ nav {
     font-family: bookman;
     font-size: 20px;
 }
-/* .navbar {
-    margin-bottom: 0px !important;
-    z-index: 1;
-} */
+.navbar {
+    background: white !important;
+}
 .navbar button{
     font-family: bookman;
     background: #ec9393;

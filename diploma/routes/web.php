@@ -13,7 +13,9 @@
 Auth::routes();
 
 Route::get('', 'MainController@index')->name('main');
+Route::get('getCountBuy', 'MainController@getCountBuy');
 Route::post('sendEmail', 'MainController@sendEmail');
+
 
 Route::get('services', 'ServiceController@index');
 Route::get('getServices', 'ServiceController@getServices');

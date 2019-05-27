@@ -58,7 +58,7 @@
             console.log(serviceThree);
                 let postBody = {
                 name : this.name,
-                phone : this.phone,
+                phone : $('#phone').val(),
                 serviceOne: serviceOne,
                 serviceTwo: serviceTwo,
                 serviceThree: serviceThree,

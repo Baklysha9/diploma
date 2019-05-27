@@ -12931,13 +12931,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             services: [],
             users: [],
             countUser: 0,
-            countOrder: 0,
+            countBuy: 0,
             countServices: 0
         };
     },
     mounted: function mounted() {
         var _this = this;
 
+        axios.get('/getCountBuy').then(function (response) {
+            console.log(response);
+            _this.countBuy = response.data;
+        });
         axios.get('/getServices').then(function (response) {
             console.log(response);
             _this.services = response.data;
@@ -13096,7 +13100,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             console.log(serviceThree);
             var postBody = {
                 name: this.name,
-                phone: this.phone,
+                phone: $('#phone').val(),
                 serviceOne: serviceOne,
                 serviceTwo: serviceTwo,
                 serviceThree: serviceThree
@@ -33531,7 +33535,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-sm-12 col-md-4 statistic"
   }, [_c('h3', [_vm._v("Количество пользователей: " + _vm._s(_vm.countUser))])]), _vm._v(" "), _c('div', {
     staticClass: "col-sm-12 col-md-4 statistic"
-  }, [_c('h3', [_vm._v("Количество заявок с сайта: " + _vm._s(_vm.countOrder))])]), _vm._v(" "), _c('div', {
+  }, [_c('h3', [_vm._v("Количество заявок с сайта: " + _vm._s(_vm.countBuy))])]), _vm._v(" "), _c('div', {
     staticClass: "col-sm-12 col-md-4 statistic"
   }, [_c('h3', [_vm._v("Количество услуг на сайте: " + _vm._s(_vm.countServices))])]), _vm._v(" "), _c('h3', {
     staticClass: "sectionName"

@@ -31,7 +31,7 @@
             <div class="pluso" data-background="#fff" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="facebook,twitter,livejournal,linkedin,vkontakte,bookmark,email" data-url="http://salon.com" data-title="Салон"></div>
         </div>
         <div class="col-sm-12 col-md-3 padding-out">
-            <img class="contactsImage" src="{{ asset('img/Basispflege .jpg')}}" alt="person">
+            <img class="contactsImage" src="{{ asset('img/basispflege.jpg')}}" alt="person">
         </div>
 
 

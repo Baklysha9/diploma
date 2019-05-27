@@ -5,7 +5,7 @@
             <h3>Количество пользователей: {{countUser}}</h3>
         </div>
         <div class="col-sm-12 col-md-4 statistic">
-            <h3>Количество заявок с сайта: {{countOrder}}</h3>
+            <h3>Количество заявок с сайта: {{countBuy}}</h3>
         </div>
         <div class="col-sm-12 col-md-4 statistic">
             <h3>Количество услуг на сайте: {{countServices}}</h3>
@@ -75,11 +75,15 @@
             services: [],
             users: [],
             countUser: 0,
-            countOrder:0,
+            countBuy:0,
             countServices:0
         }
       },
         mounted() {
+            axios.get('/getCountBuy').then((response) => {
+                console.log(response);
+                this.countBuy = response.data;
+            });
             axios.get('/getServices').then((response) => {
                 console.log(response);
                 this.services = response.data;

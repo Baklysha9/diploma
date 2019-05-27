@@ -13,7 +13,7 @@ class CreateBuyTable extends Migration
      */
     public function up()
     {
-        Schema::create('buy', function (Blueprint $table) {
+        Schema::create('buys', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('count');
             $table->timestamps();
