@@ -38,13 +38,11 @@
         },
         mounted() {
             axios.get('/getServices').then((response) => {
-            console.log(response);
             this.services = response.data;
             });
             jQuery(function($){
                 $("#phone").mask("+7 (999) 999-9999");
             });
-            console.log('form loaded');
         },
         methods: {
         sendForm: function() {
@@ -53,9 +51,6 @@
             let serviceOne = $('.select:eq(0) option:selected').text();
             let serviceTwo = $('.select:eq(1) option:selected').text();
             let serviceThree = $('.select:eq(2) option:selected').text();
-            console.log(serviceOne);
-            console.log(serviceTwo);
-            console.log(serviceThree);
                 let postBody = {
                 name : this.name,
                 phone : $('#phone').val(),
@@ -63,7 +58,6 @@
                 serviceTwo: serviceTwo,
                 serviceThree: serviceThree,
             }
-            console.log(postBody);
             const str = JSON.stringify(postBody);
             let letters = "^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$";
             if (!(this.name.match(letters)) || (serviceOne == 'Select here') || $('#phone').val() == '') {
@@ -72,7 +66,6 @@
             }
             axios.post('/sendEmail', str)
             .then((response) => {
-            console.log(response);
             if (response.status == 200) {
                  $('.modal').fadeIn('slow', function() {
                     $('.loadGif').css('display','none');

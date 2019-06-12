@@ -14,7 +14,6 @@
 import { slider } from "../scripts/slider";
     export default {
         mounted() {
-            console.log('Component mounted.')
             slider();
         }
     }
