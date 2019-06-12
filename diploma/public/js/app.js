@@ -13077,13 +13077,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var _this = this;
 
         axios.get('/getServices').then(function (response) {
-            console.log(response);
             _this.services = response.data;
         });
         jQuery(function ($) {
             $("#phone").mask("+7 (999) 999-9999");
         });
-        console.log('form loaded');
     },
 
     methods: {
@@ -13095,9 +13093,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var serviceOne = $('.select:eq(0) option:selected').text();
             var serviceTwo = $('.select:eq(1) option:selected').text();
             var serviceThree = $('.select:eq(2) option:selected').text();
-            console.log(serviceOne);
-            console.log(serviceTwo);
-            console.log(serviceThree);
             var postBody = {
                 name: this.name,
                 phone: $('#phone').val(),
@@ -13105,7 +13100,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 serviceTwo: serviceTwo,
                 serviceThree: serviceThree
             };
-            console.log(postBody);
             var str = JSON.stringify(postBody);
             var letters = "^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$";
             if (!this.name.match(letters) || serviceOne == 'Select here' || $('#phone').val() == '') {
@@ -13113,7 +13107,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return false;
             }
             axios.post('/sendEmail', str).then(function (response) {
-                console.log(response);
                 if (response.status == 200) {
                     $('.modal').fadeIn('slow', function () {
                         $('.loadGif').css('display', 'none');
@@ -13207,14 +13200,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       var _this = this;
 
       axios.get('/getServices').then(function (response) {
-        console.log(response);
         _this.services = response.data;
       });
     },
     showCardInfo: function showCardInfo(e) {
       var _this2 = this;
 
-      console.log('###', e.target.id);
       $('.place-service').css('opacity', 0.1);
       $('.serviceTitle').css('opacity', 0.1);
       $('.place-service').css('pointerEvents', 'none');
@@ -13222,7 +13213,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       $('.navbar').css('pointerEvents', 'none');
 
       axios.get('/getService/' + e.target.id).then(function (response) {
-        console.log(response);
         _this2.service = response.data;
         $('#servicePage').addClass('servicePage');
         $('#servicePage').css('display', 'block');
@@ -13239,21 +13229,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         document.querySelector('.secondColum').innerHTML += "<div class='servicePageInfo'><h1 style=''>" + _this2.service.name + "</h1><h4>Description:</h4><p>" + _this2.service.description + "</p>" + "" + "<h4>Price:</h4><h4 id='price'><span>" + _this2.service.price + " ₣</span><br>(Preis pro Leistung oder pro Stunde)</h4><h4 style='margin-top:20px;'>Dauer des Verfahrens:</h4><h4 id='time'><span>" + _this2.service.count_time + " stunde</span> </h4>" + "<h4 style='margin-top:20px;font-size:24px;'>fertige Beispiele -> <a href ='https://www.instagram.com/?hl=ru'><img style='width:50px; height:50px; border-radius: 16px;' src='img/instagram-256x256.png'></a>" + "</div>";
         $('#servicePage').append("<h1 class='buttonClose'></h1>");
 
-        // $('#servicePage').append(img);
-        // $('#servicePage').append("<h1 class='buttonClose'></h1>");
-        // document.getElementById('servicePage').innerHTML += "<div style='display:inline-block;vertical-align:top;width: 60%;text-align: center; margin-top:20px;'><h1 style=''>"+this.service.name+"</h1><h4>Description:</h4>"+this.service.description+"</h4>"+""+"<h4>Price:<br>"+this.service.price+"</h4></h4><h4 style='margin-top:20px;'>Time:<br>"+this.service.count_time+"</h4>"+"<h4 style='margin-top:20px;font-size:15px;'><a href ='#'><img style='width:150px; height:40px;' src='img/banki.jpg'></a>"+"</div>";
-
-
-        document.querySelector('.buttonClose').addEventListener('click', function () {
-          document.getElementById('servicePage').style.display = 'none';
-          document.querySelector('.place-service').style.opacity = 1;
+        $('.buttonClose').on('click', function () {
+          $('#servicePage').css('display', 'none');
+          $('.place-service').css('opacity', 1);
           $('.serviceTitle').css('opacity', 1);
-          document.querySelector('.place-service').style.pointerEvents = '';
-          document.querySelector('.navbar').style.opacity = 1;
-          document.querySelector('.navbar').style.pointerEvents = '';
+          $('.place-service').css('pointerEvents', '');
+          $('.navbar').css('opacity', 1);
+          $('.navbar').css('pointerEvents', '');
         });
       }).catch(function (error) {
-        console.log(error);
         $('.place-service').css('opacity', 1);
         $('.place-service').css('pointerEvents', '');
       });
@@ -13285,7 +13269,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('Component mounted.');
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__scripts_slider__["a" /* slider */])();
     }
 });
@@ -33476,7 +33459,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       on: {
         "click": _vm.showCardInfo
       }
-    }, [_vm._v("Подробнее")])])])
+    }, [_vm._v("Lesen Sie mehr")])])])
   }), 0)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true

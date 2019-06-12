@@ -7,7 +7,7 @@
   <div class="card-body" >
     <h5 class="card-title titleCard">{{service.name}}</h5>
     <p class="card-text bodyCard">{{ service.description | truncate }}</p>
-    <a href="#" class="btn btn-primary btnCard shadow-sm" :id="service.id" v-on:click="showCardInfo">Подробнее</a>
+    <a href="#" class="btn btn-primary btnCard shadow-sm" :id="service.id" v-on:click="showCardInfo">Lesen Sie mehr</a>
   </div>
 </div>
 </div>
