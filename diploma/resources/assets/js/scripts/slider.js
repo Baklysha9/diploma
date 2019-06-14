@@ -5,7 +5,7 @@ export function slider() {
             this.text = text;
         }
     }
-    let images = [new SliderItem("img/kommunikationsfotografie-05.jpg", "Lorem ipsum dolor sit amet consectetur adipisicing elit."),new SliderItem("img/kommunikationsfotografie-10.jpg", "Placeat, delectus, quidem rerum repellat ex fugit et modi laboriosam cum"),new SliderItem("img/kommunikationsfotografie-13.jpg", "Autem doloribus sed quod omnis eius quaerat culpa dolores cumque assumenda")];
+    let images = [new SliderItem("img/kommunikationsfotografie-05.jpg", "Bester Service in Basel"),new SliderItem("img/kommunikationsfotografie-10.jpg", "Schönes und bequemes Kabinett"),new SliderItem("img/kommunikationsfotografie-13.jpg", "Freundliches und höfliches Personal")];
     let currentIndex = 0;
     setImage(images[0]);
 

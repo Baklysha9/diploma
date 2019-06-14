@@ -12,9 +12,9 @@
         <img src="{{ asset('img/businessportrait-basel-natascha-jansen.jpg')}}" alt="person" class="person_main">
       </div>
       <div class="col-sm-12 col-md-6 person_content ">
-        <h1 class=""><span>Willkommen zurück!</span><br>Lorem ipsum dolor sit table for your potential.</h1>
-        <p class="">Die Formularsteuerelemente von Bootstrap erweitern unsere Formatvorlagen für neu gestartete Formulare um Klassen. Verwenden Sie diese Klassen, um die benutzerdefinierten Anzeigen für ein konsistenteres Rendering in allen Browsern und Geräten zu aktivieren.
-Stellen Sie sicher, dass Sie für alle Eingaben ein geeignetes Typattribut verwenden (z. B. E-Mail für E-Mail-Adresse oder Nummer für numerische Informationen), um neuere Eingabesteuerelemente wie E-Mail-Bestätigung, Nummernauswahl und mehr nutzen zu können.</p>       
+        <h1 class=""><span>Willkommen zurück!</span><br>Warum ist es wichtig, rechtzeitig Hilfe von einer Kosmetikerin zu suchen?</h1>
+        <p class="">Was bedeutet Zeit? Mit der Zeit bedeutet dies, dass Sie Ihre Haut nicht erst pflegen müssen, wenn Sie die ersten Anzeichen der Hautalterung bemerken, sondern viel früher. Sagen wir einfach, wenn Sie bereits 25 Jahre alt sind, können Sie sich eine gute Kosmetikerin aussuchen.
+Regelmäßige Eingriffe wie Reinigung, Peeling, klassische und therapeutische Gesichtsmassage ermöglichen es Ihnen, die Durchblutung der Hautzellen zu stimulieren und in gutem Zustand zu halten. Durch die ständige Anwendung dieser Verfahren wird die Alterung der Haut verlangsamt und ihre Jugend und Schönheit bewahrt.</p>       
 <mainform></mainform>
       </div>
     </div>

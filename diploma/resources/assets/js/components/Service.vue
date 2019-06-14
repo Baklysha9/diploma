@@ -3,7 +3,7 @@
  <div id ="servicePage" class="container shadow-sm"></div>
 <div class="place-service">
 
-<div v-for="service in services" class="card borderBox shadow-sm" style="width: 18rem;">
+<div v-for="service in services" class="card borderBox shadow-sm" style="width: 18em;">
   <div class="card-body" >
     <h5 class="card-title titleCard">{{service.name}}</h5>
     <p class="card-text bodyCard">{{ service.description | truncate }}</p>

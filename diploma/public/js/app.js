@@ -13346,7 +13346,7 @@ function slider() {
         this.text = text;
     };
 
-    var images = [new SliderItem("img/kommunikationsfotografie-05.jpg", "Lorem ipsum dolor sit amet consectetur adipisicing elit."), new SliderItem("img/kommunikationsfotografie-10.jpg", "Placeat, delectus, quidem rerum repellat ex fugit et modi laboriosam cum"), new SliderItem("img/kommunikationsfotografie-13.jpg", "Autem doloribus sed quod omnis eius quaerat culpa dolores cumque assumenda")];
+    var images = [new SliderItem("img/kommunikationsfotografie-05.jpg", "Bester Service in Basel"), new SliderItem("img/kommunikationsfotografie-10.jpg", "Schönes und bequemes Kabinett"), new SliderItem("img/kommunikationsfotografie-13.jpg", "Freundliches und höfliches Personal")];
     var currentIndex = 0;
     setImage(images[0]);
 
@@ -33442,7 +33442,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('div', {
       staticClass: "card borderBox shadow-sm",
       staticStyle: {
-        "width": "18rem"
+        "width": "18em"
       }
     }, [_c('div', {
       staticClass: "card-body"

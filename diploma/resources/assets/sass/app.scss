@@ -31,6 +31,7 @@ nav {
 }
 .navbar {
     background: white !important;
+    margin: 0;
 }
 .navbar button{
     background: $mainColor;
@@ -124,11 +125,12 @@ nav {
 .titleCard {
     height: 50px;
     text-align: center;
+    font-size: 18px;
     font-family: $fontHeader;
 }
 
 .btnCard {
-    margin-left: 21px;
+    margin: 0px 58px;
     font-family: $fontText;
 }
 
