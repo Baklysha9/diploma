@@ -7,3 +7,297 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@font-face {
+    font-family: Marck Script;
+    src: url('/fonts/MarckScript-Regular.ttf');
+}
+@font-face {
+    font-family: Advent Pro;
+    src: url('/fonts/AdventPro-Medium.ttf');
+}
+
+$mainColor: #ec9393;
+$bodyColor: #ec939318;
+$fontText: 'Advent Pro', sans-serif;
+$fontHeader: 'Marck Script', cursive;
+
+body {
+    background: $bodyColor;
+    overflow-x: hidden
+}
+nav {
+    font-size: 20px;
+}
+.navbar {
+    background: white !important;
+}
+.navbar button{
+    background: $mainColor;
+    border-color: $mainColor;
+}
+.navbar-brand h3{
+    color: $mainColor !important;
+    font-family: $fontText;
+    font-size: 40px;
+    text-decoration: blink;
+    border-top: 2px dashed $mainColor;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.navbar-toggler {
+    margin: 0;
+}
+.navbar-brand span{
+    color: $mainColor !important;
+    font-family: $fontText;
+    font-size: 20px;
+    border-bottom: 2px dashed $mainColor;
+}
+.navbar-nav {
+    float: right;
+}
+.nav-item {
+    font-family: $fontText;
+    font-size: 20px;
+}
+.person_row {
+    background: white;
+}
+.person_row div:first-child {
+    padding: 0;
+}
+.main_logo {
+    font-size: 50px;
+    color: $mainColor;
+}
+.person_main {
+    max-width: 100%;
+    max-height: 100%;
+}
+.person_content h1 {
+    margin-top: 15%;
+    font-family: $fontHeader;
+    font-size: 25px;
+    margin-bottom: 10%;
+    text-align: center;
+    color: $mainColor;
+}
+.person_content h1 span{
+    font-size: 50px;
+}
+.person_content {
+    text-align: center;
+    font-family: $fontText;
+}
+.person_content form {
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 20%;
+}
+.padding-out {
+    padding: 0px;
+}
+
+.place-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.borderBox {
+    margin: 10px;
+}
+
+.bodyCard {
+    height: 160px;
+    text-align: center;
+    font-family: $fontText;
+}
+
+.titleCard {
+    height: 50px;
+    text-align: center;
+    font-family: $fontHeader;
+}
+
+.btnCard {
+    margin-left: 21px;
+    font-family: $fontText;
+}
+
+.servicePage {
+    max-width: 800px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background:$mainColor;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: auto;
+}
+
+.servicePageInfo {
+    display:inline-block;
+    width: 100%;
+    text-align: center; 
+    margin-top:30px;
+}
+
+.servicePageInfo p {
+    text-align: center;
+    width: 100%;
+    font-family: $fontText;
+}
+.servicePageInfo h1,h4 {
+    font-family: $fontHeader;
+}
+
+.buttonClose {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.buttonClose:hover {
+    opacity: 1;
+}
+
+.buttonClose:before, .buttonClose:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.buttonClose:before {
+    transform: rotate(45deg);
+}
+
+.buttonClose:after {
+    transform: rotate(-45deg);
+}
+
+.firstColum {
+    height: auto;
+    background: white;
+    padding: 0px;
+}
+
+.secondColum {
+    height: auto;
+    text-align: center;
+}
+
+.priceList {
+    width: 100%; 
+    max-width: 2015px; 
+    max-height: 2843px;
+}
+
+.contactsImage {
+    width: 100%;
+}
+
+.contactsInfo {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-family: $fontText; 
+}
+.contactsInfo h3{
+    font-family: $fontHeader;
+}
+.navbar {
+    z-index:1;
+}
+.btn-primary {
+    background: $mainColor;
+    text-decoration: none;
+    border-color:$mainColor;
+}
+.btn-primary:hover{
+    background-color:white;
+    color: #333;
+    border-color:white;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    border:0;
+    background-color:white;
+    color: #333;
+    border-color:white;
+    outline: none;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: $mainColor;
+    box-shadow: 0 0 0 0.2rem rgb(236, 147, 147);
+}
+.ButtonNav {
+    margin: 5px;
+}
+
+.buttonAddServiceForm {
+    background: $mainColor;
+    float:right;
+    margin: 0px;
+    padding: 5px;
+    height: 36px;
+}
+.select {
+    margin-left: 5px;
+}
+#title {
+    font-family: $fontHeader;
+}
+.serviceTitle {
+    text-align: center;
+    padding: 20px;
+    color: $mainColor;
+    font-family: $fontHeader;
+}
+#price {
+    font-family: $fontText;
+    font-size: 15px;
+}
+#price span{
+    font-size: 30px;
+}
+#time {
+    font-family: $fontText;
+    font-size: 20px;
+}
+#time span{
+    font-size: 30px;
+}
+.panel-body {
+    margin-top: 10%;
+    font-family: $fontText;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+
+

@@ -12,7 +12,7 @@
     <title>Kosmetikerin Elena Brezger</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
   </head>
 
   <body>

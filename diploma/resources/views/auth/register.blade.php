@@ -2,9 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-sm-4 col-md-4">
-        </div>
+    <div class="row justify-content-center">
         <div class="col-sm-8 col-md-8">
             <div class="panel panel-default">
 
