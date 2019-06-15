@@ -10,25 +10,9 @@
                 <p><b>Elena Brezger:</b><br>E-Mail: joliekosmetik1@gmail.com<br>Tel. 0041 61 281 53 73<br>Fax: 0041 61 271 96 40</p>    
             </div>
 
-            <script type="text/javascript">
-                (function() {
-                    if (window.pluso)
-                        if (typeof window.pluso.start == "function") return;
-                    if (window.ifpluso == undefined) {
-                        window.ifpluso = 1;
-                        var d = document,
-                            s = d.createElement('script'),
-                            g = 'getElementsByTagName';
-                        s.type = 'text/javascript';
-                        s.charset = 'UTF-8';
-                        s.async = true;
-                        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
-                        var h = d[g]('body')[0];
-                        h.appendChild(s);
-                    }
-                })();
-            </script>
-            <div class="pluso" data-background="#fff" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="facebook,twitter,livejournal,linkedin,vkontakte,bookmark,email" data-url="http://salon.com" data-title="Салон"></div>
+            <a href ='https://www.instagram.com/?hl=ru'><img class="icon" src='img/instagram-256x256.png'></a>
+            <a href ='https://www.facebook.com'><img class="icon" src='img/facebook.png'></a>
+            <a href="tel:+1234567890"><img class="icon" src='img/whatsapp.png'></a>
         </div>
         <div class="col-sm-12 col-md-3 padding-out">
             <img class="contactsImage" src="{{ asset('img/basispflege.jpg')}}" alt="person">
@@ -41,7 +25,7 @@
 
 
         <div class="col-sm-12 col-md-12 padding-out" style="text-align:center">
-            <h3>Unser Salon:</h3>
+            <h3 class="headKontact">Unser Salon:</h3>
         </div>
         <div class="col-sm-12 col-md-6 padding-out">
         <img style="width:100%;" src="{{ asset('img/contacts.jpg')}}" alt="photo salon">

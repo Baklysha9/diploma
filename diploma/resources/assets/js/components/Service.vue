@@ -59,7 +59,7 @@
 
             $('#servicePage').html("<div class='row'><div class='col-sm-12 col-md-6 firstColum'></div><div class='col-sm-12 col-md-6 secondColum'></div></div>");
             $('.firstColum').append(img);
-            document.querySelector('.secondColum').innerHTML += "<div class='servicePageInfo'><h1 style=''>"+this.service.name+"</h1><h4>Description:</h4><p>"+this.service.description+"</p>"+""+"<h4>Price:</h4><h4 id='price'><span>"+this.service.price+" ₣</span><br>(Preis pro Leistung oder pro Stunde)</h4><h4 style='margin-top:20px;'>Dauer des Verfahrens:</h4><h4 id='time'><span>"+this.service.count_time+" stunde</span> </h4>"+"<h4 style='margin-top:20px;font-size:24px;'>fertige Beispiele -> <a href ='https://www.instagram.com/?hl=ru'><img style='width:50px; height:50px; border-radius: 16px;' src='img/instagram-256x256.png'></a>"+"</div>";
+            document.querySelector('.secondColum').innerHTML += "<div class='servicePageInfo'><h1 style=''>"+this.service.name+"</h1><h4>Beschreibung:</h4><p>"+this.service.description+"</p>"+""+"<h4>Preis:</h4><h4 id='price'><span>"+this.service.price+" ₣</span><br>(Preis pro Leistung oder pro Stunde)</h4><h4 style='margin-top:20px;'>Dauer des Verfahrens:</h4><h4 id='time'><span>"+this.service.count_time+" stunde</span> </h4>"+"<h4 style='margin-top:20px;font-size:24px;'>fertige Beispiele -> <a href ='https://www.instagram.com/?hl=ru'><img style='width:50px; height:50px; border-radius: 16px;' src='img/instagram-256x256.png'></a>"+"</div>";
             $('#servicePage').append("<h1 class='buttonClose'></h1>");
 
             $('.buttonClose').on('click', function () {

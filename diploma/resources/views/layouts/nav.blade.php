@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="/services">SERVICES</a>
+          <a class="nav-link" href="/services">DIENSTLEISTUNGEN</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/price">PRICE</a>
+          <a class="nav-link" href="/price">PREIS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contacts">CONTACTS</a>
+          <a class="nav-link" href="/contacts">KONTAKTE</a>
         </li>
         @if (Auth::check())
         <li class="nav-item">

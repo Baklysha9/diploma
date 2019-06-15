@@ -295,6 +295,13 @@ nav {
     margin-top: 10%;
     font-family: $fontText;
 }
+.icon {
+    width:50px; height:50px; border-radius: 16px;
+}
+.headKontact {
+    font-family: $fontHeader;
+    font-size: 24px;
+}
 
 @media (max-width: 768px) {
     .navbar-nav {
